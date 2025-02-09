@@ -7,7 +7,7 @@ public class ValidateBodyRouter implements Router {
     ValidateBodyRouter(Router nextRouter) {
         this.nextRouter = nextRouter;
     }
-    
+
     public void handleRequest(String request) {
         System.out.println("Validating request body: " + request);
     }

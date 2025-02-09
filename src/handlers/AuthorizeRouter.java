@@ -1,13 +1,15 @@
 package handlers;
 
-public class AuthorizeRouter {
+import DTO.Request;
+
+public class AuthorizeRouter implements Router{
     Router nextRouter;
 
-    AuthorizeRouter(Router nextRouter){
+    public AuthorizeRouter(Router nextRouter){
         this.nextRouter = nextRouter;
     }
 
-    public void handleRequest(String request){
+    public void handleRequest(Request request){
         System.out.println("Authorization is successful: " +  request);
     }
 }

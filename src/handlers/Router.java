@@ -1,5 +1,7 @@
 package handlers;
 
+import DTO.Request;
+
 public interface Router {
-    void handleRequest(String request);
+    void handleRequest(Request request);
 }

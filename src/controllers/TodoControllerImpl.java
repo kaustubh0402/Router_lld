@@ -1,11 +1,15 @@
 package controllers;
 
 import DTO.Request;
+import factory.RouterHandlerFactory;
+import handlers.*;
 import schema.Todo;
 
 public class TodoControllerImpl implements TodoController {
     public Todo addTodo(Request request) {
         System.out.println("Adding a todo");
+        Router router= RouterHandlerFactory.getRouterHandler();
+        router.handleRequest(request);
         return new Todo();
     }
 

@@ -4,7 +4,7 @@ import DTO.Request;
 
 public class ValidateParamRouter implements Router {
 
-    Router nextRouter;
+    private final Router nextRouter;
 
     public ValidateParamRouter(Router nextRouter){
         this.nextRouter= nextRouter;

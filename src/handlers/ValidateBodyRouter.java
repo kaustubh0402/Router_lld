@@ -4,7 +4,7 @@ import DTO.Request;
 
 public class ValidateBodyRouter implements Router {
 
-    Router nextRouter;
+    private final Router nextRouter;
 
     public ValidateBodyRouter(Router nextRouter) {
         this.nextRouter = nextRouter;
